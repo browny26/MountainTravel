@@ -13,8 +13,8 @@ body {
     scroll-behavior: smooth;
 } */
 
-#top-sec{
-    background-image: url("./imgs/giuseppe-mondi-F9f1JeZx9q8-unsplash.jpg");
+#top-sec img{
+    /* background-image: url("./imgs/giuseppe-mondi-F9f1JeZx9q8-unsplash.jpg"); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

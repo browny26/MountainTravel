@@ -32,11 +32,11 @@
       <nav
         class="container mx-auto flex items-center justify-between p-4 text-white"
       >
-        <p class="text-2xl">MNT</p>
+        <p class="text-2xl cursor-pointer">MNT</p>
         <ul class="flex gap-10 font-roboto">
-          <li>Equipment</li>
-          <li>About Us</li>
-          <li>Blog</li>
+          <li class="cursor-pointer">Equipment</li>
+          <li class="cursor-pointer">About Us</li>
+          <li class="cursor-pointer">Blog</li>
         </ul>
         <button class="font-roboto flex gap-2">
           <i class="bi bi-person-circle"></i>Account
@@ -92,10 +92,9 @@
       ></div>
     </section>
 
-    <section
-      id="top-sec"
-      class="w-full absolute top-0 -z-10 h-[120vh]"
-    ></section>
+    <section id="top-sec" class="w-screen absolute top-0 -z-10 h-[120vh]">
+      <img src="./imgs/giuseppe-mondi-F9f1JeZx9q8-unsplash.jpg" alt="" />
+    </section>
 
     <main class="h-[150vh] w-screen bg-primary relative" id="main">
       <div
@@ -220,7 +219,7 @@
         gsap.from("#first-item", {
           x: 300, // Posizione iniziale fuori a destra
           opacity: 0, // Inizia invisibile
-          duration: 1.5, // Durata dell'animazione
+          duration: 4, // Durata dell'animazione
           ease: "power2.out", // Transizione fluida
           scrollTrigger: {
             trigger: "#first-item", // Elemento da monitorare
@@ -234,13 +233,14 @@
         gsap.from("#second-item", {
           x: -300, // Posizione iniziale fuori a destra
           opacity: 0, // Inizia invisibile
-          duration: 1.5, // Durata dell'animazione
+          duration: 4, // Durata dell'animazione
+          delay: 1.5,
           ease: "power2.out", // Transizione fluida
           scrollTrigger: {
             trigger: "#first-item", // Elemento da monitorare
             start: "top 30%", // Quando il top di first-item è all'80% della viewport
             end: "top 10%", // Puoi regolare la fine se necessario
-            markers: true,
+            //markers: true,
             scrub: true, // Imposta a true se vuoi animare in base allo scroll
             once: false, // Esegui l'animazione solo una volta
           },
