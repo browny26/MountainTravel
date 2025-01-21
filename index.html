@@ -27,72 +27,75 @@
       };
     </script>
   </head>
-  <body class="font-source overflow-x-hidden">
-    <section id="top-sec">
-      <header class="w-screen">
-        <nav
-          class="container mx-auto flex items-center justify-between p-4 text-white"
-        >
-          <p class="text-2xl">MNT</p>
-          <ul class="flex gap-10 font-roboto">
-            <li>Equipment</li>
-            <li>About Us</li>
-            <li>Blog</li>
-          </ul>
-          <button class="font-roboto flex gap-2">
-            <i class="bi bi-person-circle"></i>Account
-          </button>
-        </nav>
-      </header>
-      <section class="h-[110vh] w-screen relative">
-        <section
-          class="container mx-auto absolute left-1/2 -translate-x-1/2 z-20 flex justify-between mt-[20vh] h-full"
-        >
-          <div class="text-white font-roboto">
-            <p class="rotate-90 mt-20 mb-20">Follow Us</p>
-            <div class="rotate-90"><i class="bi bi-instagram"></i></div>
-            <div class="rotate-90"><i class="bi bi-twitter"></i></div>
+  <body class="font-source overflow-x-hidden relative">
+    <header class="w-screen">
+      <nav
+        class="container mx-auto flex items-center justify-between p-4 text-white"
+      >
+        <p class="text-2xl">MNT</p>
+        <ul class="flex gap-10 font-roboto">
+          <li>Equipment</li>
+          <li>About Us</li>
+          <li>Blog</li>
+        </ul>
+        <button class="font-roboto flex gap-2">
+          <i class="bi bi-person-circle"></i>Account
+        </button>
+      </nav>
+    </header>
+    <section class="h-[110vh] w-screen relative">
+      <section
+        class="container mx-auto absolute left-1/2 -translate-x-1/2 z-20 flex justify-between mt-[20vh] h-full"
+      >
+        <div class="text-white font-roboto">
+          <p class="rotate-90 mt-20 mb-20">Follow Us</p>
+          <div class="rotate-90"><i class="bi bi-instagram"></i></div>
+          <div class="rotate-90"><i class="bi bi-twitter"></i></div>
+        </div>
+        <div class="flex flex-col gap-6 items-start">
+          <div id="hero-subtitle" class="flex items-center gap-5">
+            <div class="border border-secondary w-[100px]"></div>
+            <p class="text-secondary uppercase font-roboto">a hiking guide</p>
           </div>
-          <div class="flex flex-col gap-6 items-start">
-            <div id="hero-subtitle" class="flex items-center gap-5">
-              <div class="border border-secondary w-[100px]"></div>
-              <p class="text-secondary uppercase font-roboto">a hiking guide</p>
-            </div>
-            <h1 id="page-title" class="text-white text-6xl">
-              Be Prepared For The <br />
-              Mountains And Beyond!
-            </h1>
+          <h1 id="page-title" class="text-white text-6xl">
+            Be Prepared For The <br />
+            Mountains And Beyond!
+          </h1>
 
-            <a id="hero-btn" href="#main" class="text-white font-roboto"
-              >scroll down <i class="bi bi-arrow-down"></i
-            ></a>
-          </div>
-          <div
-            class="flex flex-col items-end py-10 px-2 text-white font-roboto text-sm"
-          >
-            <div class="flex gap-4 h-[44px] items-center">
-              <p>Start</p>
-              <div class="border border-white h-full"></div>
-            </div>
-            <div class="flex gap-4 h-[44px] items-center">
-              <p>01</p>
-              <div class="border border-grey-200 h-full"></div>
-            </div>
-            <div class="flex gap-4 h-[44px] items-center">
-              <p>02</p>
-              <div class="border border-grey-200 h-full"></div>
-            </div>
-            <div class="flex gap-4 h-[44px] items-center">
-              <p>03</p>
-              <div class="border border-grey-200 h-full"></div>
-            </div>
-          </div>
-        </section>
+          <a id="hero-btn" href="#main" class="text-white font-roboto"
+            >scroll down <i class="bi bi-arrow-down"></i
+          ></a>
+        </div>
         <div
-          class="absolute z-10 inset-0 bg-gradient-to-b from-transparent to-primary"
-        ></div>
+          class="flex flex-col items-end py-10 px-2 text-white font-roboto text-sm"
+        >
+          <div class="flex gap-4 h-[44px] items-center">
+            <p>Start</p>
+            <div class="border border-white h-full"></div>
+          </div>
+          <div class="flex gap-4 h-[44px] items-center">
+            <p>01</p>
+            <div class="border border-grey-200 h-full"></div>
+          </div>
+          <div class="flex gap-4 h-[44px] items-center">
+            <p>02</p>
+            <div class="border border-grey-200 h-full"></div>
+          </div>
+          <div class="flex gap-4 h-[44px] items-center">
+            <p>03</p>
+            <div class="border border-grey-200 h-full"></div>
+          </div>
+        </div>
       </section>
+      <div
+        class="h-1/2 absolute bottom-0 z-10 inset-x-0 bg-gradient-to-b from-transparent to-primary"
+      ></div>
     </section>
+
+    <section
+      id="top-sec"
+      class="w-full absolute top-0 -z-10 h-[120vh]"
+    ></section>
 
     <main class="h-[150vh] w-screen bg-primary relative" id="main">
       <div
@@ -223,8 +226,8 @@
             trigger: "#first-item", // Elemento da monitorare
             start: "top 80%", // Quando il top di first-item è all'80% della viewport
             end: "top 50%", // Puoi regolare la fine se necessario
-            scrub: false, // Imposta a true se vuoi animare in base allo scroll
-            once: true, // Esegui l'animazione solo una volta
+            scrub: true, // Imposta a true se vuoi animare in base allo scroll
+            once: false, // Esegui l'animazione solo una volta
           },
         });
 
@@ -235,10 +238,11 @@
           ease: "power2.out", // Transizione fluida
           scrollTrigger: {
             trigger: "#first-item", // Elemento da monitorare
-            start: "top 80%", // Quando il top di first-item è all'80% della viewport
-            end: "top 50%", // Puoi regolare la fine se necessario
-            scrub: false, // Imposta a true se vuoi animare in base allo scroll
-            once: true, // Esegui l'animazione solo una volta
+            start: "top 30%", // Quando il top di first-item è all'80% della viewport
+            end: "top 10%", // Puoi regolare la fine se necessario
+            markers: true,
+            scrub: true, // Imposta a true se vuoi animare in base allo scroll
+            once: false, // Esegui l'animazione solo una volta
           },
         });
       });
