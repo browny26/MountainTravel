@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel The Mountains</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              source: ['"Source Serif 4"', "serif"],
+              roboto: ["Roboto", "serif"],
+            },
+            colors: {
+              primary: "#1d203b",
+              secondary: "#f5ce42",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-source overflow-x-hidden">
+    <header class="h-[120vh] w-screen relative">
+      <nav
+        class="container mx-auto flex items-center justify-between p-4 text-white"
+      >
+        <p class="text-2xl">MNT</p>
+        <ul class="flex gap-10 font-roboto">
+          <li>Equipment</li>
+          <li>About Us</li>
+          <li>Blog</li>
+        </ul>
+        <button class="font-roboto flex gap-2">
+          <i class="bi bi-person-circle"></i>Account
+        </button>
+      </nav>
+      <section
+        class="container mx-auto absolute left-1/2 -translate-x-1/2 z-20 flex justify-between mt-[20vh] h-full"
+      >
+        <div class="text-white font-roboto">
+          <p class="rotate-90 mt-20 mb-20">Follow Us</p>
+          <div class="rotate-90"><i class="bi bi-instagram"></i></div>
+          <div class="rotate-90"><i class="bi bi-twitter"></i></div>
+        </div>
+        <div class="flex flex-col gap-6 items-sart">
+          <div class="flex items-center gap-5">
+            <div class="border border-secondary w-[100px]"></div>
+            <p class="text-secondary uppercase font-roboto">a hiking guide</p>
+          </div>
+          <h1 class="text-white text-6xl">
+            Be Prepared For The <br />
+            Mountains And Beyond!
+          </h1>
+
+          <a href="#main" class="text-white font-roboto"
+            >scroll down <i class="bi bi-arrow-down"></i
+          ></a>
+        </div>
+        <div
+          class="flex flex-col items-end py-10 px-2 text-white font-roboto text-sm"
+        >
+          <div class="flex gap-4 h-[44px] items-center">
+            <p>Start</p>
+            <div class="border border-white h-full"></div>
+          </div>
+          <div class="flex gap-4 h-[44px] items-center">
+            <p>01</p>
+            <div class="border border-grey-200 h-full"></div>
+          </div>
+          <div class="flex gap-4 h-[44px] items-center">
+            <p>02</p>
+            <div class="border border-grey-200 h-full"></div>
+          </div>
+          <div class="flex gap-4 h-[44px] items-center">
+            <p>03</p>
+            <div class="border border-grey-200 h-full"></div>
+          </div>
+        </div>
+      </section>
+      <div
+        class="absolute z-10 inset-0 bg-gradient-to-b from-transparent to-primary"
+      ></div>
+    </header>
+    <main class="h-[150vh] w-screen bg-primary relative" id="main">
+      <div
+        class="absolute -top-28 left-1/2 -translate-x-1/2 z-30 flex flex-col gap-16"
+      >
+        <div
+          class="flex flex-wrap lg:flex-nowrap gap-10 justify-between items-center h-full container mx-auto"
+        >
+          <div class="relative flex flex-col p-28 gap-5">
+            <div class="flex items-center gap-5">
+              <div class="border border-secondary w-[100px]"></div>
+              <p class="text-secondary uppercase font-roboto">get started</p>
+            </div>
+            <div>
+              <h1 class="text-white text-5xl">
+                What level of hiker <br />
+                are you?
+              </h1>
+            </div>
+            <p class="text-white font-roboto">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              assumenda excepturi, esse minus numquam iure sequi quisquam, nisi
+              totam officia nemo eos reprehenderit! Tempore minus reprehenderit
+              molestiae obcaecati commodi nihil.
+            </p>
+            <p class="font-roboto text-sm text-secondary">
+              read more <i class="bi bi-arrow-right"></i>
+            </p>
+            <div
+              class="text-9xl font-bold opacity-10 text-white font-roboto absolute top-[60px] left-8"
+            >
+              01
+            </div>
+          </div>
+          <div class="w-[850px] h-[500px]" id="first-img"></div>
+        </div>
+        <div
+          class="flex flex-wrap lg:flex-nowrap flex-col-reverse lg:flex-row gap-32 justify-center items-start lg:justify-between lg:items-center h-full container mx-auto"
+        >
+          <div class="w-[850px] h-[500px]" id="second-img"></div>
+          <div class="relative flex flex-col py-28 px-28 lg:ps-8 gap-5">
+            <div class="flex items-center gap-5">
+              <div class="border border-secondary w-[100px]"></div>
+              <p class="text-secondary uppercase font-roboto">
+                hiking essentials
+              </p>
+            </div>
+            <div>
+              <h1 class="text-white text-5xl">
+                Picking the right <br />
+                Hiking Gear!
+              </h1>
+            </div>
+            <p class="text-white font-roboto">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              assumenda excepturi, esse minus numquam iure sequi quisquam, nisi
+              totam officia nemo eos reprehenderit! Tempore minus reprehenderit
+              molestiae obcaecati commodi nihil.
+            </p>
+            <p class="font-roboto text-sm text-secondary">
+              read more <i class="bi bi-arrow-right"></i>
+            </p>
+            <div
+              class="text-9xl font-bold opacity-10 text-white font-roboto absolute top-[50px] -left-12"
+            >
+              02
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  </body>
+</html>
