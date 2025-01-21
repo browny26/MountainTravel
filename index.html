@@ -28,72 +28,78 @@
     </script>
   </head>
   <body class="font-source overflow-x-hidden">
-    <header class="h-[120vh] w-screen relative">
-      <nav
-        class="container mx-auto flex items-center justify-between p-4 text-white"
-      >
-        <p class="text-2xl">MNT</p>
-        <ul class="flex gap-10 font-roboto">
-          <li>Equipment</li>
-          <li>About Us</li>
-          <li>Blog</li>
-        </ul>
-        <button class="font-roboto flex gap-2">
-          <i class="bi bi-person-circle"></i>Account
-        </button>
-      </nav>
-      <section
-        class="container mx-auto absolute left-1/2 -translate-x-1/2 z-20 flex justify-between mt-[20vh] h-full"
-      >
-        <div class="text-white font-roboto">
-          <p class="rotate-90 mt-20 mb-20">Follow Us</p>
-          <div class="rotate-90"><i class="bi bi-instagram"></i></div>
-          <div class="rotate-90"><i class="bi bi-twitter"></i></div>
-        </div>
-        <div class="flex flex-col gap-6 items-sart">
-          <div class="flex items-center gap-5">
-            <div class="border border-secondary w-[100px]"></div>
-            <p class="text-secondary uppercase font-roboto">a hiking guide</p>
-          </div>
-          <h1 class="text-white text-6xl">
-            Be Prepared For The <br />
-            Mountains And Beyond!
-          </h1>
-
-          <a href="#main" class="text-white font-roboto"
-            >scroll down <i class="bi bi-arrow-down"></i
-          ></a>
-        </div>
-        <div
-          class="flex flex-col items-end py-10 px-2 text-white font-roboto text-sm"
+    <section id="top-sec">
+      <header class="w-screen">
+        <nav
+          class="container mx-auto flex items-center justify-between p-4 text-white"
         >
-          <div class="flex gap-4 h-[44px] items-center">
-            <p>Start</p>
-            <div class="border border-white h-full"></div>
+          <p class="text-2xl">MNT</p>
+          <ul class="flex gap-10 font-roboto">
+            <li>Equipment</li>
+            <li>About Us</li>
+            <li>Blog</li>
+          </ul>
+          <button class="font-roboto flex gap-2">
+            <i class="bi bi-person-circle"></i>Account
+          </button>
+        </nav>
+      </header>
+      <section class="h-[110vh] w-screen relative">
+        <section
+          class="container mx-auto absolute left-1/2 -translate-x-1/2 z-20 flex justify-between mt-[20vh] h-full"
+        >
+          <div class="text-white font-roboto">
+            <p class="rotate-90 mt-20 mb-20">Follow Us</p>
+            <div class="rotate-90"><i class="bi bi-instagram"></i></div>
+            <div class="rotate-90"><i class="bi bi-twitter"></i></div>
           </div>
-          <div class="flex gap-4 h-[44px] items-center">
-            <p>01</p>
-            <div class="border border-grey-200 h-full"></div>
+          <div class="flex flex-col gap-6 items-start">
+            <div id="hero-subtitle" class="flex items-center gap-5">
+              <div class="border border-secondary w-[100px]"></div>
+              <p class="text-secondary uppercase font-roboto">a hiking guide</p>
+            </div>
+            <h1 id="page-title" class="text-white text-6xl">
+              Be Prepared For The <br />
+              Mountains And Beyond!
+            </h1>
+
+            <a id="hero-btn" href="#main" class="text-white font-roboto"
+              >scroll down <i class="bi bi-arrow-down"></i
+            ></a>
           </div>
-          <div class="flex gap-4 h-[44px] items-center">
-            <p>02</p>
-            <div class="border border-grey-200 h-full"></div>
+          <div
+            class="flex flex-col items-end py-10 px-2 text-white font-roboto text-sm"
+          >
+            <div class="flex gap-4 h-[44px] items-center">
+              <p>Start</p>
+              <div class="border border-white h-full"></div>
+            </div>
+            <div class="flex gap-4 h-[44px] items-center">
+              <p>01</p>
+              <div class="border border-grey-200 h-full"></div>
+            </div>
+            <div class="flex gap-4 h-[44px] items-center">
+              <p>02</p>
+              <div class="border border-grey-200 h-full"></div>
+            </div>
+            <div class="flex gap-4 h-[44px] items-center">
+              <p>03</p>
+              <div class="border border-grey-200 h-full"></div>
+            </div>
           </div>
-          <div class="flex gap-4 h-[44px] items-center">
-            <p>03</p>
-            <div class="border border-grey-200 h-full"></div>
-          </div>
-        </div>
+        </section>
+        <div
+          class="absolute z-10 inset-0 bg-gradient-to-b from-transparent to-primary"
+        ></div>
       </section>
-      <div
-        class="absolute z-10 inset-0 bg-gradient-to-b from-transparent to-primary"
-      ></div>
-    </header>
+    </section>
+
     <main class="h-[150vh] w-screen bg-primary relative" id="main">
       <div
         class="absolute -top-28 left-1/2 -translate-x-1/2 z-30 flex flex-col gap-16"
       >
         <div
+          id="first-item"
           class="flex flex-wrap lg:flex-nowrap gap-10 justify-between items-center h-full container mx-auto"
         >
           <div class="relative flex flex-col p-28 gap-5">
@@ -125,6 +131,7 @@
           <div class="w-[850px] h-[500px]" id="first-img"></div>
         </div>
         <div
+          id="second-item"
           class="flex flex-wrap lg:flex-nowrap flex-col-reverse lg:flex-row gap-32 justify-center items-start lg:justify-between lg:items-center h-full container mx-auto"
         >
           <div class="w-[850px] h-[500px]" id="second-img"></div>
@@ -162,5 +169,86 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+    <script>
+      // Inizializza Lenis
+      const lenis = new Lenis({
+        duration: 1.5, // Durata del movimento
+        smooth: true, // Abilita scroll smooth
+        smoothTouch: true, // Abilita per dispositivi touch
+        direction: "vertical", // Direzione dello scroll
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            lenis.scrollTo(target);
+          }
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        gsap.from("#hero-subtitle", {
+          y: 100,
+          opacity: 0,
+          duration: 1.5,
+          ease: "power2.out",
+          delay: 0.5,
+        });
+        gsap.from("#page-title", {
+          y: 100,
+          opacity: 0,
+          duration: 1.5,
+          ease: "power2.out",
+          delay: 1,
+        });
+        gsap.from("#hero-btn", {
+          y: 100,
+          opacity: 0,
+          duration: 1.5,
+          ease: "power2.out",
+          delay: 1.5,
+        });
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from("#first-item", {
+          x: 300, // Posizione iniziale fuori a destra
+          opacity: 0, // Inizia invisibile
+          duration: 1.5, // Durata dell'animazione
+          ease: "power2.out", // Transizione fluida
+          scrollTrigger: {
+            trigger: "#first-item", // Elemento da monitorare
+            start: "top 80%", // Quando il top di first-item è all'80% della viewport
+            end: "top 50%", // Puoi regolare la fine se necessario
+            scrub: false, // Imposta a true se vuoi animare in base allo scroll
+            once: true, // Esegui l'animazione solo una volta
+          },
+        });
+
+        gsap.from("#second-item", {
+          x: -300, // Posizione iniziale fuori a destra
+          opacity: 0, // Inizia invisibile
+          duration: 1.5, // Durata dell'animazione
+          ease: "power2.out", // Transizione fluida
+          scrollTrigger: {
+            trigger: "#first-item", // Elemento da monitorare
+            start: "top 80%", // Quando il top di first-item è all'80% della viewport
+            end: "top 50%", // Puoi regolare la fine se necessario
+            scrub: false, // Imposta a true se vuoi animare in base allo scroll
+            once: true, // Esegui l'animazione solo una volta
+          },
+        });
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    </script>
   </body>
 </html>
